@@ -1,0 +1,33 @@
+/* Styles for the body */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Styles for the header */
+header {
+    background-color: #f3f3f3;
+    padding: 1em;
+}
+
+/* Styles for the navigation menu */
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+/* Styles for the section */
+section {
+    padding: 2em;
+    text-align: center;
+}
+
+/* Styles for the footer */
+footer {
+    background-color: #f3f3f3;
+    padding: 1em;
+    text-align: center;
+}
