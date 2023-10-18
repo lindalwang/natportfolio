@@ -1,5 +1,11 @@
-
-font-family: "Garamond", serif;
+@font-face {
+    font-family: 'Garamond Premier Pro';
+    /* change path */
+    src: url('path/to/your-font-directory/GaramondPremrPro-Reg.otf') format('opentype'); /* Change the path and filename as necessary */
+    font-weight: normal;
+    font-style: normal;
+  }
+  
 
 body {
     font-family: 'Garamond', serif;
