@@ -1,33 +1,42 @@
-/* Styles for the body */
+
+font-family: "Garamond", serif;
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Garamond', serif;
+}  
+
+/* Header Navigation Styles */
+#navbar-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 50px; /* Adjust padding as needed */
 }
 
-/* Styles for the header */
-header {
-    background-color: #f3f3f3;
-    padding: 1em;
+#navbar-container div a {
+    text-decoration: none;
+    color: inherit;
 }
 
-/* Styles for the navigation menu */
+/* Main Navigation Styles */
 nav ul {
-    list-style-type: none;
+    list-style-type: none; /* Remove bullet points */
+    display: flex;
+    justify-content: flex-end; /* Align to the right */
+    padding: 0;
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 10px;
+    margin-left: 20px; /* Add space between buttons */
 }
 
-/* Styles for the section */
-section {
-    padding: 2em;
-    text-align: center;
+nav ul li a {
+    text-decoration: none; /* Remove underlines */
+    background-color: #f2f2f2; /* Background color */
+    padding: 10px 15px; /* Padding around text */
+    border-radius: 5px; /* Rounded corners */
+    color: #333; /* Text color */
 }
 
-/* Styles for the footer */
-footer {
-    background-color: #f3f3f3;
-    padding: 1em;
-    text-align: center;
+nav ul li a:hover {
+    background-color: #ddd; /* Change background on hover */
 }
