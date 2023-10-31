@@ -6,7 +6,6 @@
     font-style: normal;
   }
   
-
 body {
     font-family: 'Garamond', serif;
 }  
@@ -22,27 +21,46 @@ body {
     text-decoration: none;
     color: inherit;
 }
+/* Additional styles for the arrow animation */
+#navbar-container div a::after {
+    content: ""; /* Empty content */
+    display: inline-block;
+    width: 0; /* Initial width */
+    height: 0;
+    border-style: solid;
+    border-width: 5px 5px 5px 5px; /* Arrow size */
+    border-color: transparent transparent transparent #333; /* Arrow color */
+    opacity: 0; /* Make arrow initially invisible */
+    transition: opacity 0.3s ease, width 0.3s ease; /* Smooth transition */
+    margin-left: 10px; /* Space between the text and arrow */
+}
+
+#navbar-container div a:hover::after {
+    width: 10px; /* Final arrow width */
+    opacity: 1; /* Make arrow visible on hover */
+}
+
 
 /* Main Navigation Styles */
 nav ul {
     list-style-type: none; /* Remove bullet points */
     display: flex;
-    justify-content: flex-end; /* Align to the right */
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: flex-end; /* Align to the right */
     padding: 0;
 }
 
 nav ul li {
-    margin-left: 20px; /* Add space between buttons */
+    margin-bottom: 10px; /* Add space between links vertically */
 }
 
 nav ul li a {
     text-decoration: none; /* Remove underlines */
-    background-color: #f2f2f2; /* Background color */
-    padding: 10px 15px; /* Padding around text */
-    border-radius: 5px; /* Rounded corners */
     color: #333; /* Text color */
+    font-size: 1em; /* Adjust font size as necessary */
 }
 
 nav ul li a:hover {
-    background-color: #ddd; /* Change background on hover */
+    text-decoration: underline; /* Add underline on hover */
+    color: #000; /* Darken text color on hover */
 }
